@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BikePartsShare - Borrow Parts</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>BikePartsShare</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="borrow.html">Borrow Parts</a></li>
+        <li><a href="inventory.html">Tools Inventory</a></li>
+        <li><a href="community.html">Community Highlights</a></li>
+      <form action="#" method="get" class="vertical-form">
+        <fieldset>
+          <legend>Loan Request Details</legend>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="part">Part or Tool</label>
+          <input type="text" id="part" name="part" required />
+
+          <label for="duration">Loan Duration (days)</label>
+          <input type="number" id="duration" name="duration" min="1" max="30" required />
+
+          <button type="submit">Submit Request</button>
+        </fieldset>
+      </form>
+    </article>
+
+    <section>
+      <h2>How it works</h2>
+      <p>
+        Submit your request, and a nearby owner will confirm availability. Pickup and return instructions are coordinated through in-app messaging.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>BikePartsShare community service</p>
+  </footer>
+</body>
+</html>

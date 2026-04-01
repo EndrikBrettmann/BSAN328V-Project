@@ -1,0 +1,167 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background-color: #f9fbff;
+}
+
+header {
+  background-color: #025f6d;
+  color: #fff;
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #f7f7f7;
+  text-decoration: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background-color: rgba(255, 255, 255, 0.28);
+}
+
+main {
+  padding: 1.2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section,
+article {
+  background: #fff;
+  border: 1px solid #d8e1e9;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #021f27;
+  color: #fff;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.75rem;
+}
+
+table th,
+table td {
+  border: 1px solid #c7d3dd;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+table th {
+  background-color: #e8f1f7;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  align-items: end;
+  margin: 0.75rem 0;
+}
+
+.search-form label {
+  display: none;
+  font-size: 0.9rem;
+}
+
+.vertical-form fieldset {
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.vertical-form label,
+.vertical-form input,
+.vertical-form button {
+  width: 100%;
+}
+
+.vertical-form input {
+  padding: 0.75rem;
+}
+
+.vertical-form button {
+  margin-top: 0.25rem;
+}
+
+input,
+button {
+  border: 1px solid #90a8ba;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #027b8e;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+  background-color: #046f7f;
+}
+
+@media (max-width: 760px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  main {
+    padding: 0.7rem;
+  }
+
+  .search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .search-form button {
+    width: 100%;
+  }
+}
