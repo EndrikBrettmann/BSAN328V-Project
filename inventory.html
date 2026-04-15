@@ -3,18 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BikePartsShare - Tools Inventory</title>
+  <title>Parts Bin Special - Tools Inventory</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>BikePartsShare</h1>
+    <h1>Parts Bin Special</h1>
     <nav aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="borrow.html">Borrow Parts</a></li>
         <li><a href="inventory.html">Tools Inventory</a></li>
         <li><a href="community.html">Community Highlights</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Tools Inventory</h2>
       <p>Search for a tool below. This is a static demo page with hardcoded listings.</p>
 
       <form action="#" method="get" class="search-form">
@@ -58,15 +65,29 @@
     </section>
 
     <section>
-      <h2>Learn More</h2>
-      <p>
-        Check the community page for profiles and additional resources.
-      </p>
+      <h2>Add a Tool</h2>
+      <form action="#" method="post" class="loan-form">
+        <fieldset>
+          <legend>Add a tool to shared inventory</legend>
+
+          <div class="form-field">
+            <label for="new-tool">Tool</label>
+            <input type="text" id="new-tool" name="new-tool" placeholder="Tool name" required />
+          </div>
+
+          <div class="form-field">
+            <label for="new-condition">Condition</label>
+            <input type="text" id="new-condition" name="new-condition" placeholder="Condition" required />
+          </div>
+
+          <button type="submit">Add tool to shared inventory</button>
+        </fieldset>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>BikePartsShare tools directory</p>
+    <p>Parts Bin Special shared inventory</p>
   </footer>
 </body>
 </html>
